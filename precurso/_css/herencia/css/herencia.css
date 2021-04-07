@@ -1,0 +1,29 @@
+header nav li {
+    color: green;
+}
+
+footer nav ul li {
+    color: red
+}
+
+/* header .dani {
+    background-color: black;
+}
+
+footer .dani {
+    background-color: burlywood;
+} */
+
+/* pseudoselector */
+
+header nav ul li:last-child, header p {
+    background-color: black;
+}
+
+footer nav ul li:last-child {
+    background-color: burlywood;
+}
+
+section>h2 {
+    color: red;
+}

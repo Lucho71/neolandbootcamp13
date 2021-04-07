@@ -1,0 +1,19 @@
+#articulo3 {
+    background-color: lightblue;
+}
+
+.articulos {
+    background-color: red;
+}
+
+article {
+    background-color: blue !important;
+}
+
+article {
+    background-color: blueviolet;
+}
+
+#articulo3 {
+    background-color: green;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure y Picture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        div img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- esta orientadas a imagenes - semanticas -->
+
+    <!-- no semantica -->
+    <!-- <div>
+        <img src="images/g-salad.jpg" alt="ensalada de frutas">
+        <h5>Ensalada de frutas</h5>
+    </div> -->
+
+
+    <!-- semantica -->
+    <!-- <figure>
+        <img src="images/g-salad.jpg" alt="ensalada de frutas">
+        <figcaption>Ensalada de frutas</figcaption>
+    </figure> -->
+
+
+
+    <!-- picture -->
+    <div>
+        <picture>
+            <source media="(min-width:426px)" srcset="images/g-salad.jpg">
+            <source media="(max-width:425px)" srcset="images/g-salad2.jpg">
+            <img src="images/g-salad.jpg" alt="">
+        </picture>
+    </div>
+
+
+</body>
+
+</html>
