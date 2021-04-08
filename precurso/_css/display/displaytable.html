@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display table para visualizar modo tabla</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .tabla {
+            display: table;
+            width: 100%;
+        }
+
+        .tabla>div {
+            display: table-row;
+        }
+
+        .tabla>div:first-child {
+            background-color: teal;
+            color: white;
+        }
+
+        .tabla>div>div {
+            display: table-cell;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+
+        .tabla>div:nth-child(even) {
+            /*odd impares, even pares*/
+            background-color: lightgrey;
+        }
+
+        .tabla>div>div:nth-child(2) {
+            width: 30%;
+        }
+
+        .tabla>div>div:first-child {
+            width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabla">
+        <div>
+            <div>Nombre</div>
+            <div>Apellido</div>
+            <div>Edad</div>
+        </div>
+        <div>
+            <div>Juan Antonio poasdkfaskfop`kafok akdfpaks pf kaspfokap so fkpasokf paoskfpaso f</div>
+            <div>Pérez</div>
+            <div>39</div>
+        </div>
+        <div>
+            <div>Mario asdfñkasjkdfpoaskofkapsf </div>
+            <div>Girón</div>
+            <div>37</div>
+        </div>
+        <div>
+            <div>Juan Antonio</div>
+            <div>Pérez</div>
+            <div>39</div>
+        </div>
+        <div>
+            <div>Mario</div>
+            <div>Girón</div>
+            <div>37</div>
+        </div>
+        <div>
+            <div>Juan Antonio</div>
+            <div>Pérez</div>
+            <div>39</div>
+        </div>
+        <div>
+            <div>Mario</div>
+            <div>Girón</div>
+            <div>37</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

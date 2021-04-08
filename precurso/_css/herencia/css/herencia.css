@@ -6,6 +6,12 @@ footer nav ul li {
     color: red
 }
 
+@media(max-width: 600px) {
+    footer nav ul li {
+        color: green;
+    }
+}
+
 /* header .dani {
     background-color: black;
 }
@@ -26,4 +32,22 @@ footer nav ul li:last-child {
 
 section>h2 {
     color: red;
+}
+
+/* existe un p que tiene la clase texto */
+
+p.texto {
+    color: tomato;
+    text-shadow: 1px 1px 10px black;
+}
+
+/* HERENCIA existe un p que dentro de el tiene un elemento cualquiera con la clase texto */
+
+p .texto {
+    color: tomato;
+    text-shadow: 1px 1px 10px black;
+}
+
+.tomato {
+    background-color: tomato;
 }

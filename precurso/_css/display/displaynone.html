@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar cosas</title>
+
+    <style>
+        /*todas las cajas fondo negro y texto blanco padding 10 */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .caja1 {
+            display: none;
+            /* oculta el elemento y deja el espacio disponible */
+        }
+
+        .caja2 {
+            visibility: hidden;
+            /* oculta el elemento y no deja espacio disponible */
+        }
+
+        .caja3 {
+            opacity: 0.1;
+            /* funciona como visibility pero me permite ocultar con opacidad diferente grados de ocultación desde 0 hasta 1*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caja1">
+        1 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, ipsam. Pariatur nihil aut commodi, ea illo
+        nemo magni hic recusandae, vel minima amet molestiae labore iste debitis maiores dicta odio!
+    </div>
+    <div class="caja2">
+        2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus aliquid ab assumenda rem suscipit
+        explicabo recusandae provident maxime modi enim, sit accusamus, voluptatem est saepe? Nihil exercitationem
+        impedit ipsa.
+    </div>
+    <div class="caja3">
+        3- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem accusamus incidunt inventore ducimus rem
+        assumenda temporibus velit officiis eius blanditiis ratione repellendus enim, sed hic. Incidunt esse assumenda
+        quod quis?
+    </div>
+
+</body>
+
+</html>

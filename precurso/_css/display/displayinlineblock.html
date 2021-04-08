@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display inline Block</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: black;
+            border-bottom: 4px solid red;
+        }
+
+        header nav .menu {
+            list-style: none;
+            padding: 20px;
+        }
+
+        header nav .menu li a {
+            display: block;
+            background-color: red;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 20px;
+
+        }
+
+        header nav .menu li {
+            display: inline-block;
+
+
+            width: calc(25% - 14px);
+            margin: 0px 10px 0px 0px;
+
+            /* tiene un pequeño problema reconocido dentro w3c añade sin pedir un margin de 4px */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- display inline block me coloca los elementos en linea pero mantiendo la propiedades de bloque -->
+
+    <!-- header>nav>ul.menu>li*4>a{Item $} -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+                <li><a href="">Item 4</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
