@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoints o puntos de corte donde mi css cambia</title>
+    <style>
+        /*movil*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .caja {
+            width: 95%;
+            background-color: tomato;
+            text-align: center;
+            padding: 2em;
+            margin: 0 auto;
+            /* responsive no se justifican los textos */
+        }
+
+        .caja h2 {
+            display: none;
+            color: white;
+        }
+
+        /*tablet*/
+
+        @media(min-width: 700px) {
+            .caja {
+                background-color: green;
+                text-align: left;
+            }
+
+            .caja h2 {
+                display: block;
+            }
+        }
+
+        /* desktop */
+
+        @media(min-width: 1004px) {
+            .caja {
+                background-color: violet;
+            }
+
+            .caja h2 {
+                font-size: 280%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        los puntos mas comunes son los siguientes
+        movil: 0px 425px
+        tablet: 426px - 768px - 800px
+        portatil: 800px - 1200px
+        monitor: 1200 - 2k - 4k - 5k
+
+        la mejor de forma de trabajar con mediaqueries es por rangos.++
+    
+        si empezais en mobilefirst las mediaqueries empiezan en min-width
+
+        desktop empieza en maximos
+    -->
+
+    <div class="caja">
+        <h2>Titulo de la caja</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique fugit iasdjofiasdjf
+            fadfasfdfsafasdfasffasdffsadfsad deserunt laborum pariatur in
+            repellat veniam atque dolores inventore fugiat.
+        </p>
+    </div>
+
+
+</body>
+
+</html>

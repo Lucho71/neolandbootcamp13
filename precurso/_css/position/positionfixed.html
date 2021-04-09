@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fixed: como absolute salimos de flujo del html. trabajeremos con top, left, right, bottom. Elimina el elemento del cualquier tipo de scrool horizontal o vertical. -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 100px;
+        }
+
+        .uno {
+            background-color: chocolate;
+        }
+
+        .dos {
+            background-color: lightskyblue;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+        }
+
+        .dos div {
+            display: inline-block;
+            /* position: relative;
+            top: -100px; */
+        }
+
+        .tres {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="uno">1</div>
+    <div class="dos">
+        <div>hola</div>
+        <div>adios</div>
+        <div>hasta luego</div>
+    </div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+    <div class="uno">1</div>
+    <div class="tres">3</div>
+
+</body>
+
+</html>

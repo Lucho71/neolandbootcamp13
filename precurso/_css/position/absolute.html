@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .uno {
+            background-color: chocolate;
+        }
+
+        .dos {
+            background-color: darkblue;
+            position: absolute;
+            /* top: 0;
+            left: 600px; */
+            right: 200px;
+            bottom: 300px;
+
+        }
+
+        .tres {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- position absolute: extraigo la caja del flujo normal del html, posicionandola en relación a su al 0,0 de la web. Desde (0,0) de mi pagina puedo moverme con to, left, right, botom. Mi posicion no afecta a mis compañeros-->
+    <div class="uno">1</div>
+    <div class="dos">2</div>
+    <div class="tres">3</div>
+</body>
+
+</html>

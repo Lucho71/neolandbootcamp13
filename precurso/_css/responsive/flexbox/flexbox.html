@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section div {
+            display: flex;
+            /* justify-content: space-evenly; */
+            /*space-between, space-around, space-evenly*/
+            flex-direction: row;
+            /* column, column-reverse, row-reverse*/
+            flex-wrap: wrap;
+
+        }
+
+        section article {
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        @media(min-width: 500px) {
+            section article {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media(min-width: 750px) {
+            section article {
+                width: calc(25% - 20px);
+            }
+        }
+
+        @media(min-width: 900px) {
+
+            /* quiero una columna de 20% - 60% - 20% - 100%*/
+
+            section article {
+                width: calc(20% - 20px);
+            }
+
+            section article:nth-child(3n-1) {
+                /* n=1 -> 2; n=2 -> 5 ; n=3 -> 8; n=4 -> 11 */
+                width: calc(60% - 20px);
+            }
+
+            section article:last-child {
+                width: calc(100% - 20px);
+            }
+        }
+
+        @media(min-width: 1200px) {
+
+            section article:nth-child(odd) {
+                width: calc(20% - 20px);
+            }
+
+            section article:nth-child(even) {
+                width: calc(80% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h2>Titulo de la seccion</h2>
+        <div>
+            <article>
+                <h3>Titulo de articulo 1</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 2</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 3</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+            <article>
+                <h3>Titulo de articulo 4</h3>
+            </article>
+
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>

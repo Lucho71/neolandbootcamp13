@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    grid-template-rows: 200px 200px;
+}
+
+.grid>div {
+    background-color: thistle;
+    padding: 1em;
+}
+
+/* grid-row, grid-column */
+
+/* 
+.grid .element3 {
+    grid-row: 1/3;
+    grid-column: 3/4;
+} 
+*/
+
+.grid .element2 {
+    grid-row: 1/3;
+    grid-column: 2/3;
+}

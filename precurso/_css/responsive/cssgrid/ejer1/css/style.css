@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0 auto;
+    width: 80%;
+}
+
+section .grid {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto 50vh;
+    /* vw */
+    gap: 1em;
+    /* row-gap column-gap */
+}
+
+section .grid article {
+    background-color: tomato;
+}
+
+@media(max-width: 1200px) {
+    section .grid {
+        grid-template-columns: 50% 50%;
+    }
+}

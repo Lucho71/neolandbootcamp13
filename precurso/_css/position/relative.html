@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            position: relative;
+        }
+
+        .uno {
+            background-color: chocolate;
+            top: 250px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .dos {
+            background-color: darkblue;
+            top: 20px;
+        }
+
+        .tres {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- position relative: permite desplazar los elementos con respecto a su posición inicial (su posicion static) a partir de ahi puedo mover el elemento con terminos de top, left, right, bottom -->
+    <div class="uno">1</div>
+    <div class="dos">2</div>
+    <div class="tres">3</div>
+</body>
+
+</html>

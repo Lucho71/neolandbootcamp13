@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 0 auto;
+    width: 80%;
+}
+
+section .grid {
+    display: grid;
+    /* grid-template-columns: 1fr 4fr 3fr; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr 1fr;
+    /* vw */
+    gap: 2em;
+    /* row-gap column-gap */
+}
+
+section .grid article {
+    background-color: tomato;
+}
+
+@media(max-width: 1200px) {
+    section .grid {
+        grid-template-columns: 50% 50%;
+    }
+}

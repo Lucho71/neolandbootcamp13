@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de eje</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .products article {
+            border: 2px solid black;
+            max-width: 300px;
+            /* un div que no tiene ancho ya esta centrado */
+            /* para centrar un divisior de cualquier tipo, ponemos margenes automaticos a cada lado */
+            margin: 40px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .products article .descuento {
+            background-color: red;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            right: -25px;
+            top: -25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- para hacer un cambio de eje y que la posicion (0,0) de un objeto sea la esquina superir derecha de su contenedor. El contnedor padre tiene que estar en positicion relative y el elemento en absoluta. y nos moveremos en top, left right bottom sobre ese nuevo eje-->
+
+
+    <section class="products">
+        <h2>Productos destacados</h2>
+
+        <article>
+
+            <figure>
+                <img
+                    src="https://www.prolaboral.es/WebRoot/StoreES/Shops/63783229/5122/6205/96A6/2702/6395/C0A8/2935/B18A/camiseta-roly-dogo-azuloceano_m.jpg">
+            </figure>
+            <h3>Titulo de producto</h3>
+            <p>Precio: 30€</p>
+            <p class="descuento">25%</p>
+        </article>
+
+    </section>
+</body>
+
+</html>

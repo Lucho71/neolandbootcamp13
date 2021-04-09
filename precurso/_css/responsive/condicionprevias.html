@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- es obligatorio el uso de meta viewport, si no usamos esta etiqueta el navegador escalar la pagina para que entre en el ancho del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- dejemos de trabajar con anchos fijos. Usamos ancho porcentuales o anchos máximos-->
+    <title>Document</title>
+    <style>
+        .caja {
+            /* max-width: 700px; */
+            width: 90%;
+            background-color: tomato;
+        }
+
+        /* img se adaptan siempre al 100% de su contenido y height auto para que no se deformen */
+
+        img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caja">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, fugit fugiat! Maxime culpa ex, repudiandae
+        dolor error inventore itaque, eius perspiciatis eligendi neque labore magni temporibus non iste fuga. Corrupti!
+
+        <img src="https://www.prolaboral.es/WebRoot/StoreES/Shops/63783229/5122/6205/96A6/2702/6395/C0A8/2935/B18A/camiseta-roly-dogo-azuloceano_m.jpg"
+            alt="">
+    </div>
+
+</body>
+
+</html>
